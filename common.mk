@@ -217,7 +217,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libavservices_minijail_vendor:64 \
+    libavservices_minijail.vendor:64 \
     libcodec2_hidl@1.2.vendor:64 \
     libcodec2_soft_common.vendor:64 \
     libion.vendor \
