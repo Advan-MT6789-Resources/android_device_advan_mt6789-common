@@ -69,11 +69,11 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
             ;;
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
-            "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
+            grep -q "libstagefright_foundation-v33.so" "${2}" || "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             "${PATCHELF}" --replace-needed "libavservices_minijail_vendor.so" "libavservices_minijail.so" "${2}"
             ;;
         vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so)
-            "${PATCHELF_0_17_2}" --add-needed "libshim_sensors.so" "${2}"
+            grep -q "libshim_sensors.so" "${2}" || "${PATCHELF_0_17_2}" --add-needed "libshim_sensors.so" "${2}"
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
         vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc)
@@ -86,7 +86,7 @@ function blob_fixup() {
         vendor/bin/mnld |\
         vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so |\
         vendor/lib64/mt6789/libaalservice.so)
-            "${PATCHELF_0_17_2}" --add-needed "libshim_sensors.so" "${2}"
+            grep -q "libshim_sensors.so" "${2}" || "${PATCHELF_0_17_2}" --add-needed "libshim_sensors.so" "${2}"
             ;;
         vendor/lib64/hw/audio.primary.mediatek.so)
             "${PATCHELF}" --replace-needed "libalsautils.so" "libalsautils-v31.so" "${2}"
