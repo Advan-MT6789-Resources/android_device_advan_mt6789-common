@@ -68,6 +68,9 @@ function blob_fixup() {
         vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
+        vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc)
+            sed -i 's/@1.2-mediatek/@1.2-mediatek-64b/g' "${2}"
+            ;;
     esac
 }
 
