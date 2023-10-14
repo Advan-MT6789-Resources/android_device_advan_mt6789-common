@@ -70,6 +70,10 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc)
             sed -i 's/@1.2-mediatek/@1.2-mediatek-64b/g' "${2}"
             ;;
+        vendor/lib64/mediadrm/libwvdrmengine.so |\
+        vendor/lib64/libwvhidl.so)
+            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
+            ;;
     esac
 }
 
