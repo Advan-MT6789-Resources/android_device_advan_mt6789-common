@@ -306,6 +306,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    libshim_sensors \
     libsensorndkbridge \
     android.frameworks.sensorservice@1.0.vendor:64 \
     android.hardware.sensors@1.0.vendor:64 \

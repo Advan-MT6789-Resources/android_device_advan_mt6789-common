@@ -65,6 +65,7 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
             ;;
         vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so)
+            "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
         vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc)
@@ -73,6 +74,11 @@ function blob_fixup() {
         vendor/lib64/mediadrm/libwvdrmengine.so |\
         vendor/lib64/libwvhidl.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
+            ;;
+        vendor/bin/mnld |\
+        vendor/lib*/mt6789/libaalservice.so |\
+        vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so)
+            "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
             ;;
     esac
 }
