@@ -62,7 +62,6 @@ PRODUCT_PACKAGES += \
     audio.usb.default:64
 
 PRODUCT_PACKAGES += \
-    libalsautils:64 \
     libaudiofoundation.vendor:64 \
     libbluetooth_audio_session:64 \
     libdynproc:64 \

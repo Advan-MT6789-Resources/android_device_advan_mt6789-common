@@ -84,6 +84,9 @@ function blob_fixup() {
         vendor/lib64/mt6789/libaalservice.so)
             "${PATCHELF_0_17_2}" --add-needed "libshim_sensors.so" "${2}"
             ;;
+        vendor/lib64/hw/audio.primary.mediatek.so)
+            "${PATCHELF}" --replace-needed "libalsautils.so" "libalsautils-v31.so" "${2}"
+            ;;
     esac
 }
 
