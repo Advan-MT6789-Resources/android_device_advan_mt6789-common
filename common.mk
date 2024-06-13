@@ -92,7 +92,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor:64 \
     android.hardware.camera.device@3.6.vendor:64 \
-    android.hardware.camera.provider@2.6.vendor:64
+    android.hardware.camera.provider@2.6.vendor:64 \
+    libexif.vendor:64 \
+    libpng.vendor:64
 
 # CAS
 PRODUCT_PACKAGES += \
@@ -116,7 +118,8 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor:64
+    android.hardware.drm@1.4.vendor:64 \
+    libexpat.vendor:64
 
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -140,7 +143,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor:64 \
     android.hardware.gnss@1.1.vendor:64 \
     android.hardware.gnss@2.1.vendor:64 \
-    android.hardware.gnss-V1-ndk.vendor:64
+    android.hardware.gnss-V1-ndk.vendor:64 \
+    libcurl.vendor:64
 
 # Health
 PRODUCT_PACKAGES += \
