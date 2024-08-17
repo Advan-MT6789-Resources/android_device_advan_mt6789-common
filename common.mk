@@ -61,14 +61,6 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default:64 \
     audio.usb.default:64
 
-PRODUCT_PACKAGES += \
-    libaudiofoundation.vendor:64 \
-    libbluetooth_audio_session:64 \
-    libdynproc:64 \
-    libhapticgenerator:64 \
-    libnbaio_mono:64 \
-    libtinycompress:64
-
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
@@ -78,23 +70,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.1.vendor:64
-
 # Boot control HAL
 PRODUCT_PACKAGES += \
     com.android.hardware.boot \
     android.hardware.boot-service.default_recovery
-
-# Camera
-PRODUCT_PACKAGES += \
-    android.hardware.camera.common@1.0.vendor:64 \
-    android.hardware.camera.device@3.6.vendor:64 \
-    android.hardware.camera.provider@2.6.vendor:64 \
-    libcamera_metadata.vendor:64 \
-    libexif.vendor:64 \
-    libpng.vendor:64
 
 # CAS
 PRODUCT_PACKAGES += \
@@ -108,19 +87,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     android.hardware.memtrack-service.mediatek-mali
 
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@4.0.vendor \
-    libdrm.vendor \
-    libhardware.vendor \
-    libutils-v32
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
-
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor:64 \
-    libexpat.vendor:64
 
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -138,31 +107,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl:64 \
     android.hardware.gatekeeper@1.0-service
 
-PRODUCT_PACKAGES += \
-	libgatekeeper.vendor:64
-
-# GNSS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
-    android.hardware.gnss.visibility_control@1.0.vendor:64 \
-    android.hardware.gnss@1.1.vendor:64 \
-    android.hardware.gnss@2.1.vendor:64 \
-    android.hardware.gnss-V1-ndk.vendor:64 \
-    libcurl.vendor:64
-
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
-
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.allocator@1.0.vendor \
-    libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder.vendor \
-    libunwindstack.vendor \
-    libutilscallstack.vendor
 
 # IMS
 PRODUCT_COPY_FILES += \
@@ -209,26 +157,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
-# Keymint
-PRODUCT_PACKAGES += \
-    android.hardware.security.keymint-V1-ndk_platform.vendor:64 \
-    android.hardware.security.secureclock-V1-ndk_platform.vendor:64 \
-    android.hardware.security.sharedsecret-V1-ndk_platform.vendor:64 \
-    libcppbor_external.vendor:64
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.advan
 
 # Media
-PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor:64 \
-    libcodec2_hidl@1.2.vendor:64 \
-    libcodec2_soft_common.vendor:64 \
-    libion.vendor \
-    libsfplugin_ccodec_utils.vendor:64 \
-    libstagefright_foundation-v33:64
-
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
@@ -284,11 +217,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek
 
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.3.vendor:64 \
-    android.hardware.power-V2-ndk_platform.vendor:64 \
-    vendor.mediatek.hardware.mtkpower@1.2.vendor
-
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
 
@@ -298,30 +226,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
 
-# Protobuf
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-full-vendorcompat \
-    libprotobuf-cpp-lite-vendorcompat
-
-# Radio
-PRODUCT_PACKAGES += \
-    android.hardware.radio.config@1.3.vendor:64 \
-    android.hardware.radio@1.6.vendor:64 \
-    libui_shim:64
-
-# Secure Element
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.2.vendor:64
-
 # Sensors
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0.vendor:64 \
-    android.hardware.sensors@1.0-convert-shared.vendor:64 \
     android.hardware.sensors@2.0-subhal-impl-1.0:64 \
-    android.hardware.sensors-service.multihal \
-    android.hardware.sensors@2.0-ScopedWakelock.vendor:64 \
-    libsensorndkbridge
+    android.hardware.sensors-service.multihal
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -338,16 +246,8 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl:64
 
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0.vendor:64
-
 # Updatable APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3.vendor:64 \
-    android.hardware.usb.gadget@1.1.vendor:64
 
 # Vibrator
 PRODUCT_PACKAGES += \
@@ -359,10 +259,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-wrapper \
     wpa_supplicant
-
-PRODUCT_PACKAGES += \
-    android.hardware.tetheroffload.config@1.0.vendor:64 \
-    android.hardware.tetheroffload.control@1.1.vendor:64
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
