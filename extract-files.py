@@ -59,7 +59,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libprotobuf-cpp-lite-3.9.1.so', 'libprotobuf-cpp-full-3.9.1.so'),
     (
         'vendor/bin/mnld',
-        'vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so',
         'vendor/lib64/mt6789/libaalservice.so',
     ): blob_fixup()
         .add_needed('libshim_sensors.so'),
