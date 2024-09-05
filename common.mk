@@ -316,12 +316,12 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    libshim_sensors \
-    libsensorndkbridge \
     android.frameworks.sensorservice@1.0.vendor:64 \
+    android.hardware.sensors@1.0-convert-shared.vendor:64 \
     android.hardware.sensors@2.0-subhal-impl-1.0:64 \
     android.hardware.sensors@2.1-service.multihal \
-    android.hardware.sensors@2.0-ScopedWakelock.vendor:64
+    android.hardware.sensors@2.0-ScopedWakelock.vendor:64 \
+    libsensorndkbridge
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
