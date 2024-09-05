@@ -13,6 +13,11 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
+namespace_imports = [
+    'device/advan/mt6789-common',
+    'hardware/mediatek',
+]
+
 blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so')
@@ -46,6 +51,7 @@ module = ExtractUtilsModule(
     'mt6789-common',
     'advan',
     blob_fixups=blob_fixups,
+    namespace_imports=namespace_imports,
 )
 
 if __name__ == '__main__':
