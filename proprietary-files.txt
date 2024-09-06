@@ -501,7 +501,7 @@ system_ext/framework/mediatek-telephony-base.jar|018c0d93cd249e2bc0b3f865e2d3a94
 system_ext/framework/mediatek-telephony-common.jar|9cdc9a9d04277c2fc74056f6b72ac3505701a238
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so|3ee0e7a7abf84b4dd99079beccbb81dfccfb920b
 system_ext/lib64/libcomutils.so|fae6b5fd7628518eaf3e3eadac2133dd83f30839
-system_ext/lib64/libimsma.so|bd8b3a0ec18cb834206ec8aeba5d34cfdfa1b00d
+system_ext/lib64/libimsma.so;DISABLE_CHECKELF|bd8b3a0ec18cb834206ec8aeba5d34cfdfa1b00d
 system_ext/lib64/libimsma_adapt.so|87682d1ecd12331841ce3b9f6eb04822a6725488
 system_ext/lib64/libimsma_rtp.so|25b249764ba9df7d89f3af209f38e4cb4993ddb3
 system_ext/lib64/libimsma_socketwrapper.so|5a26aae9eee36b9e5dc8875aa68b20ced2e1b676
@@ -549,18 +549,18 @@ vendor/lib/libh264dec_customize.so
 vendor/lib/libh264dec_sa.ca7.so
 vendor/lib/libh264dec_sd.ca7.so
 vendor/lib/libh264dec_se.ca7.so
-vendor/lib/libhevce_sb.ca7.android.so
+vendor/lib/libhevce_sb.ca7.android.so;DISABLE_CHECKELF
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
 vendor/lib/libmp3dec_mtk.so
-vendor/lib/libmp4enc_sa.ca7.so
+vendor/lib/libmp4enc_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib/libmtkperf_client_vendor.so
-vendor/lib/libvcodec_oal.so
+vendor/lib/libvcodec_oal.so;DISABLE_CHECKELF
 vendor/lib/libvcodec_utility_plat.mt6789.so
 vendor/lib/libvcodecdrv_header_stub.so
-vendor/lib/libvp8dec_sa.ca7.so
-vendor/lib/libvp8enc_sa.ca7.so
-vendor/lib/libvp9dec_sa.ca7.so
+vendor/lib/libvp8dec_sa.ca7.so;DISABLE_CHECKELF
+vendor/lib/libvp8enc_sa.ca7.so;DISABLE_CHECKELF
+vendor/lib/libvp9dec_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib64/AVCSecureVdecCA_510.so
 vendor/lib64/HEVCSecureVdecCA_510.so
 vendor/lib64/VP9SecureVdecCA_510.so
@@ -814,7 +814,7 @@ vendor/lib64/libvow_ap_test_nn.so
 # TEE
 vendor/lib/libgz_gp_client.so
 vendor/lib/libgz_uree.so
-vendor/lib/libthha.so
+vendor/lib/libthha.so;DISABLE_CHECKELF
 vendor/lib64/libTEECommon.so
 vendor/lib64/libgz_gp_client.so
 vendor/lib64/libgz_uree.so
