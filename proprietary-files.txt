@@ -5,9 +5,9 @@ vendor/lib/libaedv.so
 vendor/lib64/libaedv.so
 
 # APU
--vendor/etc/vintf/manifest/manifest_apuware_apusys.xml
--vendor/etc/vintf/manifest/manifest_apuware_hmp.xml
--vendor/etc/vintf/manifest/manifest_apuware_utils.xml
+vendor/etc/vintf/manifest/manifest_apuware_apusys.xml
+vendor/etc/vintf/manifest/manifest_apuware_hmp.xml
+vendor/etc/vintf/manifest/manifest_apuware_utils.xml
 vendor/lib64/APUWareApusysServer.so
 vendor/lib64/APUWareHmpServer.so
 vendor/lib64/APUWareUtilsServer.so
@@ -205,7 +205,7 @@ vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
--vendor/etc/vintf/manifest/manifest_hwcomposer.xml
+vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/meow.cfg
 vendor/lib/egl/egl.cfg
@@ -266,7 +266,7 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 # DRM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
@@ -295,9 +295,9 @@ vendor/etc/init/init.gps_pwr.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/lbs_hidl_service.rc
 vendor/etc/init/mtk_agpsd_p.rc
--vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mtk.xml
--vendor/etc/vintf/manifest/gnss@2.1-service.xml
--vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
+vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mtk.xml
+vendor/etc/vintf/manifest/gnss@2.1-service.xml
+vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
 vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/hw/gps.default.so
@@ -495,14 +495,14 @@ vendor/etc/slp_conf
 # IMS - from UP1A.231005.007
 system_ext/bin/vtservice|eeb08595c53be9d7a69ba5b677b5604f753eab37
 system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
--system_ext/framework/mediatek-common.jar|b4f57c8f65b92d8b65074911b626559107764bb5
--system_ext/framework/mediatek-framework.jar|73d22531a8cb342712e66333120b7e0f6615733c
--system_ext/framework/mediatek-ims-base.jar|a6f7ae937de5b9c25e41af8c15db2717a31a6e97
--system_ext/framework/mediatek-ims-common.jar|163657f0dea57218c55fc758fefa6eecf2edb8f6
--system_ext/framework/mediatek-ims-extension-plugin.jar|4562720d65136b189d661f248fd3170a749cada3
--system_ext/framework/mediatek-telecom-common.jar|247f6c23515d7336a857a749eba69ac63d4212f3
--system_ext/framework/mediatek-telephony-base.jar|018c0d93cd249e2bc0b3f865e2d3a946cf57a4cf
--system_ext/framework/mediatek-telephony-common.jar|9cdc9a9d04277c2fc74056f6b72ac3505701a238
+system_ext/framework/mediatek-common.jar|b4f57c8f65b92d8b65074911b626559107764bb5
+system_ext/framework/mediatek-framework.jar|73d22531a8cb342712e66333120b7e0f6615733c
+system_ext/framework/mediatek-ims-base.jar|a6f7ae937de5b9c25e41af8c15db2717a31a6e97
+system_ext/framework/mediatek-ims-common.jar|163657f0dea57218c55fc758fefa6eecf2edb8f6
+system_ext/framework/mediatek-ims-extension-plugin.jar|4562720d65136b189d661f248fd3170a749cada3
+system_ext/framework/mediatek-telecom-common.jar|247f6c23515d7336a857a749eba69ac63d4212f3
+system_ext/framework/mediatek-telephony-base.jar|018c0d93cd249e2bc0b3f865e2d3a946cf57a4cf
+system_ext/framework/mediatek-telephony-common.jar|9cdc9a9d04277c2fc74056f6b72ac3505701a238
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so|3ee0e7a7abf84b4dd99079beccbb81dfccfb920b
 system_ext/lib64/libcomutils.so|fae6b5fd7628518eaf3e3eadac2133dd83f30839
 system_ext/lib64/libimsma.so|bd8b3a0ec18cb834206ec8aeba5d34cfdfa1b00d
@@ -520,7 +520,7 @@ system_ext/lib64/libvcodec_capenc.so|2a9dd2edc46a17f402f342f09035ba5c25bb7ea2
 system_ext/lib64/libvt_avsync.so|186a5263b1be36e3f5ba47c0e8b40bca48a6b382
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so|e3bf2e0e02fc29048ff161a3884fc7614c6a092a
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|31594b914dae370731b2192fa891f12aac36a976
--system_ext/priv-app/ImsService/ImsService.apk|e2d3c7154ebe5ebc3594d4647d06d80fd1481cc7
+system_ext/priv-app/ImsService/ImsService.apk|e2d3c7154ebe5ebc3594d4647d06d80fd1481cc7
 
 # Init
 vendor/bin/init.insmod.sh
@@ -593,7 +593,7 @@ vendor/lib64/libvpu5.so
 # Media (C2)
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
--vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
+vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
@@ -635,7 +635,7 @@ vendor/etc/public.libraries.txt
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk
 vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
 vendor/etc/armnn_app.config
 vendor/etc/nnapi_powerhal.json
 vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so
@@ -857,7 +857,7 @@ vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 # USB
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
 vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
--vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
+vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
 
 # Wi-Fi
 vendor/bin/wlan_assistant
