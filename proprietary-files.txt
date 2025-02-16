@@ -765,9 +765,6 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 # Seccomp policy
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
-vendor/etc/seccomp_policy/mediacodec.policy
-vendor/etc/seccomp_policy/mediaextractor.policy
-vendor/etc/seccomp_policy/mediaswcodec.policy
 
 # Secure Element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
