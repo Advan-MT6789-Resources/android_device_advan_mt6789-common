@@ -1,2 +1,0 @@
-# Lights
-/(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.advan    u:object_r:hal_light_default_exec:s0
