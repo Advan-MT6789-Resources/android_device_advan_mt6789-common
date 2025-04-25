@@ -21,8 +21,8 @@ vendor/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 
 # Audio
-vendor/lib64/hw/audio.primary.mediatek.so
-vendor/lib64/hw/audio.r_submix.mediatek.so
+vendor/lib64/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib64/hw/audio.primary.mt6789.so
+vendor/lib64/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib64/hw/audio.r_submix.mt6789.so
 vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/lib_iir.so
 vendor/lib64/lib_speech_enh.so
@@ -201,7 +201,7 @@ vendor/etc/init/hw/init_connectivity.rc
 vendor/etc/init/init.wmt_drv.rc
 
 # Display
-vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789
+vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789;SYMLINK=vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
@@ -209,28 +209,28 @@ vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/meow.cfg
 vendor/lib/egl/egl.cfg
-vendor/lib64/egl/mt6789/libGLES_mali.so
+vendor/lib64/egl/mt6789/libGLES_mali.so;SYMLINK=vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/egl/libGLES_meow.so
 vendor/lib64/egl/libMEOW_data.so
 vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
-vendor/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so
-vendor/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib64/hw/mt6789/gralloc.common.so
-vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so
-vendor/lib64/hw/mt6789/vulkan.mali.so
+vendor/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so;SYMLINK=vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
+vendor/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so;SYMLINK=vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
+vendor/lib64/hw/mt6789/gralloc.common.so;SYMLINK=vendor/lib64/hw/gralloc.common.so
+vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so;SYMLINK=vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so
+vendor/lib64/hw/mt6789/vulkan.mali.so;SYMLINK=vendor/lib64/hw/vulkan.mali.so
 vendor/lib64/hw/hwcomposer.mtk_common.so
-vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so
-vendor/lib64/mt6789/libaal_cust_func.so
-vendor/lib64/mt6789/libaalservice.so
-vendor/lib64/mt6789/libaiselector.so
-vendor/lib64/mt6789/libdpframework.so
-vendor/lib64/mt6789/libgpudataproducer.so
-vendor/lib64/mt6789/libmtk_drvb.so
-vendor/lib64/mt6789/libnir_neon_driver.so
-vendor/lib64/mt6789/libpq_cust_base.so
-vendor/lib64/mt6789/libpq_prot.so
-vendor/lib64/mt6789/libpqparamparser.so
+vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so;SYMLINK=vendor/lib64/arm.graphics-V1-ndk_platform.so
+vendor/lib64/mt6789/libaal_cust_func.so;SYMLINK=vendor/lib64/libaal_cust_func.so
+vendor/lib64/mt6789/libaalservice.so;SYMLINK=vendor/lib64/libaalservice.so
+vendor/lib64/mt6789/libaiselector.so;SYMLINK=vendor/lib64/libaiselector.so
+vendor/lib64/mt6789/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
+vendor/lib64/mt6789/libgpudataproducer.so;SYMLINK=vendor/lib64/libgpudataproducer.so
+vendor/lib64/mt6789/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
+vendor/lib64/mt6789/libnir_neon_driver.so;SYMLINK=vendor/lib64/libnir_neon_driver.so
+vendor/lib64/mt6789/libpq_cust_base.so;SYMLINK=vendor/lib64/libpq_cust_base.so
+vendor/lib64/mt6789/libpq_prot.so;SYMLINK=vendor/lib64/libpq_prot.so
+vendor/lib64/mt6789/libpqparamparser.so;SYMLINK=vendor/lib64/libpqparamparser.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
@@ -301,8 +301,8 @@ vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
 vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/hw/gps.default.so
-vendor/lib64/mt6789/libDR.so
-vendor/lib64/mt6789/libmnl.so
+vendor/lib64/mt6789/libDR.so;SYMLINK=vendor/lib64/libDR.so
+vendor/lib64/mt6789/libmnl.so;SYMLINK=vendor/lib64/libmnl.so
 vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/librpc.so
 vendor/lib64/libviagpsrpc.so
@@ -540,14 +540,14 @@ vendor/lib/libladder.so
 vendor/lib64/libladder.so
 
 # Media
-vendor/bin/mt6789/v3avpud.mt6789
+vendor/bin/mt6789/v3avpud.mt6789;SYMLINK=vendor/bin/v3avpud
 vendor/etc/init/v3avpud.rc
-vendor/lib/mt6789/libmtk_drvb.so
-vendor/lib/mt6789/libvcodec_utility.so
-vendor/lib/mt6789/libvcodec_utility_v3a.so
-vendor/lib/mt6789/libvcodecdrv.so
-vendor/lib/mt6789/libvcodecdrv_v3a.so
-vendor/lib/mt6789/libvpudv3a_vcodec.so
+vendor/lib/mt6789/libmtk_drvb.so;SYMLINK=vendor/lib/libmtk_drvb.so
+vendor/lib/mt6789/libvcodec_utility.so;SYMLINK=vendor/lib/libvcodec_utility.so
+vendor/lib/mt6789/libvcodec_utility_v3a.so;SYMLINK=vendor/lib/libvcodec_utility_v3a.so
+vendor/lib/mt6789/libvcodecdrv.so;SYMLINK=vendor/lib/libvcodecdrv.so
+vendor/lib/mt6789/libvcodecdrv_v3a.so;SYMLINK=vendor/lib/libvcodecdrv_v3a.so
+vendor/lib/mt6789/libvpudv3a_vcodec.so;SYMLINK=vendor/lib/libvpudv3a_vcodec.so
 vendor/lib/libbwc.so
 vendor/lib/libh264dec_customize.so
 vendor/lib/libh264dec_sa.ca7.so
@@ -640,9 +640,9 @@ vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
 vendor/etc/armnn_app.config
 vendor/etc/nnapi_powerhal.json
-vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so
-vendor/lib64/mt6789/libneuron_adapter_mgvi.so
-vendor/lib64/mt6789/libneuron_runtime.5.so
+vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so;SYMLINK=vendor/lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so
+vendor/lib64/mt6789/libneuron_adapter_mgvi.so;SYMLINK=vendor/lib64/libneuron_adapter_mgvi.so
+vendor/lib64/mt6789/libneuron_runtime.5.so;SYMLINK=vendor/lib64/libneuron_runtime.5.so
 vendor/lib64/libarmnn.so
 vendor/lib64/libarmnn_ndk.mtk.vndk.so
 vendor/lib64/libcmdl.so
@@ -801,7 +801,7 @@ vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 
 # Sensors
 vendor/etc/init/hw/init.sensor_2_0.rc
-vendor/lib64/hw/sensors.mediatek.V2.0.so
+vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6789.so
 vendor/lib64/libhfmanager.so
 vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
