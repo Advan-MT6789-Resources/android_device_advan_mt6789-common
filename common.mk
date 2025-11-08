@@ -246,7 +246,8 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/mediatek
+    hardware/mediatek \
+    hardware/mediatek/wlan/wifi_hal
 
 # Thermal
 PRODUCT_PACKAGES += \
@@ -260,10 +261,11 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
 
 # Wi-Fi
+$(call soong_config_set,wpa_supplicant_8,board_wlan_mediatek_stability,true)
+
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
-    libwifi-hal-wrapper \
     wpa_supplicant
 
 # Inherit from the proprietary files makefile.
