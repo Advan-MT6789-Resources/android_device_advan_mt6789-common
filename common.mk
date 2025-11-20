@@ -194,7 +194,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.transsion
+    android.hardware.lights-service.advan
 
 # Media
 PRODUCT_PACKAGES += \
