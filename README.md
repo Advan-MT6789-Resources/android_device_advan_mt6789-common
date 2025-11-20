@@ -1,9 +1,5 @@
-# Common device tree for Transsion MT6789 devices
+# Common device configuration for Advan MT6789 family
 
-```
-#
-# Copyright (C) 2024 IrawansPrjkt
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-```
+Currently supported devices
+- Tab V8 (T812)
+- X1 (S34NF2)
