@@ -580,6 +580,7 @@ vendor/lib/libion_ulit.so
 vendor/lib/libladder.so
 vendor/lib/libmp3dec_mtk.so
 vendor/lib/libmp4enc_sa.ca7.so
+vendor/lib/libmtkperf_client_vendor.so
 vendor/lib/libmvpu_cic_ci_compiler.so
 vendor/lib/libmvpu_clc_cl_compiler.so
 vendor/lib/libmvpu_clc_mvpu_debuginfo.so
@@ -744,6 +745,7 @@ vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/lib/libpowerhalwrap_vendor.so
 vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
+vendor/lib64/libmtkperf_client_vendor.so
 vendor/lib64/libperfctl_vendor.so
 vendor/lib64/libpower_timer.so
 vendor/lib64/libpowerhal.so
