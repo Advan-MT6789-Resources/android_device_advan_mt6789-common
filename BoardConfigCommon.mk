@@ -45,7 +45,6 @@ TARGET_BOOTLOADER_BOARD_NAME := mt6789
 TARGET_NO_BOOTLOADER := true
 
 # Broken Rules
-BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Partitions
@@ -112,7 +111,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # Vendor Security Patch
-VENDOR_SECURITY_PATCH := 2024-04-05
+VENDOR_SECURITY_PATCH := 2025-06-05
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

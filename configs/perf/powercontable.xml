@@ -849,16 +849,4 @@
         <MinValue>-1</MinValue>
         <DefaultValue>-1</DefaultValue>
     </CMD>
-    <CMD name="PERF_RES_DRAM_VM_KSWAPD0_BIND_CORE_ENABLE" id="0x10000002">
-        <Entry path="/proc/sys/vm/kswapd0_bind_core_enable"></Entry>
-        <Compare>more</Compare>
-        <MaxValue>1</MaxValue>
-        <MinValue>0</MinValue>
-    </CMD>
-    <CMD name="PERF_RES_DRAM_VM_WATERMARK_SCALEFACTOR" id="0x0102c300">
-        <Entry path="/proc/sys/vm/watermark_scale_factor"></Entry>
-        <Compare>more</Compare>
-        <MaxValue>200</MaxValue>
-        <MinValue>0</MinValue>
-    </CMD>
 </CONTABLE>
