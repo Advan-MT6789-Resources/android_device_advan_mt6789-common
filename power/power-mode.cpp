@@ -31,7 +31,8 @@ bool isDeviceSpecificModeSupported(Mode type, bool* _aidl_return) {
 bool setDeviceSpecificMode(Mode type, bool enabled) {
     switch (type) {
         case Mode::DOUBLE_TAP_TO_WAKE: {
-            ::android::base::WriteStringToFile(enabled ? "cc1" : "cc2", TAP_TO_WAKE_NODE, true);
+            ::android::base::WriteStringToFile(enabled ? "1" : "0", "/proc/android_touch/GESTURE", true);
+            ::android::base::WriteStringToFile(enabled ? "1" : "0", "/proc/android_touch/SMWP", true);
             return true;
         }
         default:
