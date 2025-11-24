@@ -217,11 +217,11 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libavservices_minijail_vendor \
-    libcodec2_hidl@1.2.vendor \
-    libcodec2_soft_common.vendor \
+    libavservices_minijail_vendor:64 \
+    libcodec2_hidl@1.2.vendor:64 \
+    libcodec2_soft_common.vendor:64 \
     libion.vendor \
-    libsfplugin_ccodec_utils.vendor \
+    libsfplugin_ccodec_utils.vendor:64 \
     libstagefright_softomx_plugin.vendor
 
 PRODUCT_COPY_FILES += \
