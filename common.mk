@@ -309,7 +309,8 @@ PRODUCT_PACKAGES += \
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor:64 \
-    android.hardware.radio@1.6.vendor:64
+    android.hardware.radio@1.6.vendor:64 \
+    libui_shim:64
 
 # Secure Element
 PRODUCT_PACKAGES += \
