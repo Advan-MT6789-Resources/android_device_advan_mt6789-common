@@ -42,7 +42,6 @@ vendor/lib64/libaurisysdemo.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
 vendor/lib64/libblisrc32_vendor.so
 vendor/lib64/libcvsd_mtk.so
-vendor/lib64/libladder.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libmtklimiter_vendor.so
 vendor/lib64/libmtkshifter_vendor.so
@@ -240,7 +239,6 @@ vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
-vendor/lib64/libladder.so
 vendor/lib64/libmml.so
 vendor/lib64/libpqframework.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
@@ -509,7 +507,6 @@ system_ext/lib64/libimsma_rtp.so|25b249764ba9df7d89f3af209f38e4cb4993ddb3
 system_ext/lib64/libimsma_socketwrapper.so|5a26aae9eee36b9e5dc8875aa68b20ced2e1b676
 system_ext/lib64/libmtk_vt_service.so|340a3c2c63a9b0a05d57353ac5b75fd0cc11aae4
 system_ext/lib64/libmtk_vt_wrapper.so|4a59d2d0ea2a276afd478a5b5ea7b7ee06b3276a
-system_ext/lib64/libmtkperf_client.so|566c82c940bf98baef1922aa0fa9423962931c83
 system_ext/lib64/libsignal.so|5595f5d7b6e7320572ec05ac199f951d141b516a
 system_ext/lib64/libsink.so|5511822c30af7d219107947a86dca9eb1b66cb55
 system_ext/lib64/libsource.so|298093044c3e9896c2004124164897e7b9fc929a
@@ -534,6 +531,10 @@ vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
+# Ladder
+vendor/lib/libladder.so
+vendor/lib64/libladder.so
+
 # Media
 vendor/bin/mt6789/v3avpud.mt6789
 vendor/etc/init/v3avpud.rc
@@ -551,7 +552,6 @@ vendor/lib/libh264dec_se.ca7.so
 vendor/lib/libhevce_sb.ca7.android.so
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
-vendor/lib/libladder.so
 vendor/lib/libmp3dec_mtk.so
 vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmtkperf_client_vendor.so
@@ -639,7 +639,6 @@ vendor/etc/nnapi_powerhal.json
 vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so
 vendor/lib64/mt6789/libneuron_adapter_mgvi.so
 vendor/lib64/mt6789/libneuron_runtime.5.so
-vendor/lib64/mt6789/libnir_neon_driver.so
 vendor/lib64/libarmnn.so
 vendor/lib64/libarmnn_ndk.mtk.vndk.so
 vendor/lib64/libcmdl.so
