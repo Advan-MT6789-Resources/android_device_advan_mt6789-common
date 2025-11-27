@@ -217,6 +217,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek
 
+$(call soong_config_set,mediatek_power,powerhal_ext,//$(LOCAL_PATH):libpowermode-ext-advan)
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
 
