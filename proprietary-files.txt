@@ -185,6 +185,9 @@ vendor/lib64/libbluetooth_audio_session_mediatek.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 
+# Camera
+vendor/lib64/libJpgEncPipe.so;DUMMY_SHARED_LIB
+
 # Chipinfo
 vendor/bin/chipinfo
 vendor/etc/init/chipinfo_init.rc
