@@ -221,6 +221,7 @@ vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so
 vendor/lib64/hw/mt6789/vulkan.mali.so
 vendor/lib64/hw/hwcomposer.mtk_common.so
 vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so
+vendor/lib64/mt6789/libaal_cust_func.so
 vendor/lib64/mt6789/libaalservice.so
 vendor/lib64/mt6789/libaiselector.so
 vendor/lib64/mt6789/libdpframework.so

@@ -12,6 +12,7 @@ lib64/hw/gralloc.common.so
 lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so
 lib64/hw/vulkan.mali.so
 lib64/arm.graphics-V1-ndk_platform.so
+lib64/libaal_cust_func.so
 lib64/libaalservice.so
 lib64/libaiselector.so
 lib64/libdpframework.so
