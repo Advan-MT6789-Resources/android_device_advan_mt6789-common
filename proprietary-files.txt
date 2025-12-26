@@ -571,6 +571,7 @@ vendor/lib64/VP9SecureVdecCA_510.so
 vendor/lib64/libAVCSecureVencCA_510.so
 vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libbwc.so
+vendor/lib64/libhevce_sb.ca7.android.so;DISABLE_CHECKELF
 vendor/lib64/libmp3dec_mtk.so
 vendor/lib64/libmvpu_cic_ci_compiler.so
 vendor/lib64/libmvpu_clc_cl_compiler.so
