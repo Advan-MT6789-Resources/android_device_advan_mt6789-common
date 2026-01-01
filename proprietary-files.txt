@@ -610,7 +610,6 @@ vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
 
 # Media configs
-vendor/etc/media_codecs_performance.xml
 vendor/etc/mtk_platform_codecs_config.xml
 
 # Mmagent
