@@ -267,8 +267,5 @@ PRODUCT_PACKAGES += \
     libwifi-hal-wrapper \
     wpa_supplicant
 
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
-
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/advan/mt6789-common/mt6789-common-vendor.mk)
