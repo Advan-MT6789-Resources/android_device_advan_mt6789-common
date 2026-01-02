@@ -1,4 +1,4 @@
-# All blobs from sys_mssi_t_64_cn_armv82-user 15 AP3A.240905.015.A2 1739864968 release-keys, unless pinned
+# All blobs from sys_mssi_t_64_cn_armv82-user 15 AP3A.240905.015.A2 1739896298 release-keys, unless pinned
 
 # AEE
 vendor/lib/libaedv.so
