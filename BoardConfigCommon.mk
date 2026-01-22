@@ -60,6 +60,7 @@ SSI_PARTITIONS := product system system_ext
 TREBLE_PARTITIONS := odm_dlkm vendor vendor_dlkm
 ALL_PARTITIONS := $(SSI_PARTITIONS) $(TREBLE_PARTITIONS)
 
+ifneq ($(WITH_GMS),true)
 $(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
@@ -67,6 +68,11 @@ $(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
 $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := erofs) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
+else
+$(foreach p, $(call to-upper, $(ALL_PARTITIONS)), \
+    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := erofs) \
+    $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
+endif
 
 BOARD_FLASH_BLOCK_SIZE := 262144 # BOARD_KERNEL_PAGESIZE * 64
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
@@ -83,7 +89,9 @@ BOARD_USES_METADATA_PARTITION := true
 BOARD_USES_ODM_DLKIMAGE := true
 BOARD_USES_VENDOR_DLKMIMAGE := true
 
+ifneq ($(WITH_GMS),true)
 -include vendor/lineage/config/BoardConfigReservedSize.mk
+endif
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6789
